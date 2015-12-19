@@ -1,13 +1,13 @@
 # dnsdist-sample
-
+<br>
 #
-
-#DNSAction
-DNSAction.Drop
-DNSAction.Nxdomain
-DNSAction.Spoof
-DNSAction.Allow
-DNSAction.HeaderModify
-DNSAction.Pool
-DNSAction.None
-
+<br>
+#DNSAction<br>
+DNSAction.Drop<br>
+DNSAction.Nxdomain<br>
+DNSAction.Spoof<br>
+DNSAction.Allow<br>
+DNSAction.HeaderModify<br>
+DNSAction.Pool<br>
+DNSAction.None<br>
+<br>
