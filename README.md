@@ -11,3 +11,12 @@ DNSAction.HeaderModify<br>
 DNSAction.Pool<br>
 DNSAction.None<br>
 <br>
+#TuningParm<br>
+setTCPRecvTimeout<br>
+setTCPSendTimeout<br>
+setMaxUDPOutstanding<br>
+setMaxTCPClientThreads<br>
+setECSSourcePrefixV4<br>
+setECSSourcePrefixV6<br>
+setECSOverride<br>
+<br>
