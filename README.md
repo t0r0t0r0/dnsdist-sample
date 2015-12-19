@@ -24,8 +24,8 @@ setECSOverride<br>
 infolog<br>
 warnlog<br>
 errlog<br>
-<sample><br>
+<< sample >><br>
 function logging(logtype,remote, qname, qtype, dh, len)<br>
-        warnlog(string.format("TYPE:%s IP:%s QNAME:%s QTYPE:%s RD:%s CD:%s", logtype, remote:tostring(), qname:tostring(), qtype, tostring(dh:getRD()), tostring(dh:getCD())))<br>
+\t\t        warnlog(string.format("TYPE:%s IP:%s QNAME:%s QTYPE:%s RD:%s CD:%s", logtype, remote:tostring(), qname:tostring(), qtype, tostring(dh:getRD()), tostring(dh:getCD())))<br>
 end<br>
 <br>
