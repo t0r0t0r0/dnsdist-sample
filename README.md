@@ -30,9 +30,9 @@ setECSSourcePrefixV6<br>
 setECSOverride<br>
 <br>
 #Logging
-infolog<br>
-warnlog<br>
-errlog<br>
+infolog(string)<br>
+warnlog(string)<br>
+errlog(string)<br>
 << sample >><br>
 function logging(logtype, remote, qname, qtype, dh, len)<br>
         warnlog(string.format("TYPE:%s IP:%s QNAME:%s QTYPE:%s RD:%s CD:%s", logtype, remote:tostring(), qname:tostring(), qtype, tostring(dh:getRD()), tostring(dh:getCD())))<br>
