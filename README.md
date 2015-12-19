@@ -8,7 +8,7 @@ DNSAction.Nxdomain<br>
 DNSAction.Spoof<br>
 DNSAction.Allow<br>
 DNSAction.HeaderModify<br>
-DNSAction.Pool<br>
+DNSAction.Pool , string poolname<br>
 DNSAction.None<br>
 <br>
 #DNSHeader<br>
@@ -21,13 +21,13 @@ void dnsheader:setQR(bool)<br>
 <br>
 <br>
 #TuningParam<br>
-setTCPRecvTimeout<br>
-setTCPSendTimeout<br>
-setMaxUDPOutstanding<br>
-setMaxTCPClientThreads<br>
-setECSSourcePrefixV4<br>
-setECSSourcePrefixV6<br>
-setECSOverride<br>
+setTCPRecvTimeout(2)<br>
+setTCPSendTimeout(2)<br>
+setMaxUDPOutstanding()<br>
+setMaxTCPClientThreads()<br>
+setECSSourcePrefixV4()<br>
+setECSSourcePrefixV6()<br>
+setECSOverride()<br>
 <br>
 #Logging
 void infolog(string)<br>
