@@ -12,12 +12,12 @@ DNSAction.Pool<br>
 DNSAction.None<br>
 <br>
 #DNSHeader<br>
-dnsheader:setRD(bool)<br>
+void dnsheader:setRD(bool)<br>
 bool dnsheader:getRD()<br>
-dnsheader:setCD(bool)<br>
+void dnsheader:setCD(bool)<br>
 bool dnsheader:getRD()<br>
-dnsheader:setTC(bool)<br>
-dnsheader:setQR(bool)<br>
+void dnsheader:setTC(bool)<br>
+void dnsheader:setQR(bool)<br>
 <br>
 <br>
 #TuningParam<br>
