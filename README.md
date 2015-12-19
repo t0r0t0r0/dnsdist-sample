@@ -11,7 +11,7 @@ DNSAction.HeaderModify<br>
 DNSAction.Pool<br>
 DNSAction.None<br>
 <br>
-#TuningParm<br>
+#TuningParam<br>
 setTCPRecvTimeout<br>
 setTCPSendTimeout<br>
 setMaxUDPOutstanding<br>
