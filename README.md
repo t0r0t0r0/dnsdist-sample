@@ -16,23 +16,26 @@ DNSAction.HeaderModify()<br>
 DNSAction.Pool , string poolname<br>
 DNSAction.None<br>
 -- 記述例 --<br>
-function exampleDrop(remote, qname, qtype, dh, len)
-        return DNSAction.Drop()
-end
-function exampleNxDomain(remote, qname, qtype, dh, len)
-        return DNSAction.Nxdomain()
-end
-function exampleSpoof(remote, qname, qtype, dh, len)
-        return DNSAction.Spoof()
-end
-function exampleAllow(remote, qname, qtype, dh, len)
-        return DNSAction.Allow()
-end
-
-function examplePool(remote, qname, qtype, dh, len)
-        return DNSAction.Pool, "dnspool1"
-end
-
+function exampleDrop(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Drop()<br>
+end<br>
+<br>
+function exampleNxDomain(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Nxdomain()<br>
+end<br>
+<br>
+function exampleSpoof(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Spoof()<br>
+end<br>
+<br>
+function exampleAllow(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Allow()<br>
+end<br>
+<br>
+function examplePool(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Pool, "dnspool1"<br>
+end<br>
+<br>
 <br>
 #DNSHeader<br>
 void dnsheader:setRD(bool)<br>
