@@ -8,12 +8,20 @@ webserver(ipaddress:port, password) : ステータス表示WebServerとその接
 webserver("192.168.0.1:8083","dnsdist")<br>
 <br>
 #DNSAction<br>
-DNSAction.Drop()<br>
-DNSAction.Nxdomain()<br>
-DNSAction.Spoof()<br>
 DNSAction.Allow()<br>
-DNSAction.HeaderModify()<br>
+DNSAction.Delay()<br>
+DNSAction.DisableValidation()<br>
+DNSAction.Drop()<br>
+DNSAction.Log()<br>
+DNSAction.NoRecurse()<br>
+DNSAction.Nxdomain()<br>
 DNSAction.Pool , string poolname<br>
+DNSAction.QPSPool , string poolname<br>
+DNSAction.QPS()<br>
+DNSAction.RCode()<br>
+DNSAction.Spoof()<br>
+DNSAction.TC()<br>
+DNSAction.HeaderModify()<br>
 DNSAction.None<br>
 -- 記述例 --<br>
 function exampleDrop(remote, qname, qtype, dh, len)<br>
