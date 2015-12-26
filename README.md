@@ -1,6 +1,9 @@
 # dnsdist-sample
 <br>
 #
+#Practical<br>
+Shutodown() : サービス停止<br>
+webserver(ipaddress:port, password) : ステータス表示WebServerとその接続パスワードの設定。portは省略可<br>
 <br>
 #DNSAction<br>
 DNSAction.Drop<br>
