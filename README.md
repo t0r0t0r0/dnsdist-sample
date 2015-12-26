@@ -8,13 +8,31 @@ webserver(ipaddress:port, password) : ステータス表示WebServerとその接
 webserver("192.168.0.1:8083","dnsdist")<br>
 <br>
 #DNSAction<br>
-DNSAction.Drop<br>
-DNSAction.Nxdomain<br>
-DNSAction.Spoof<br>
-DNSAction.Allow<br>
-DNSAction.HeaderModify<br>
+DNSAction.Drop()<br>
+DNSAction.Nxdomain()<br>
+DNSAction.Spoof()<br>
+DNSAction.Allow()<br>
+DNSAction.HeaderModify()<br>
 DNSAction.Pool , string poolname<br>
 DNSAction.None<br>
+-- 記述例 --<br>
+function exampleDrop(remote, qname, qtype, dh, len)
+        return DNSAction.Drop()
+end
+function exampleNxDomain(remote, qname, qtype, dh, len)
+        return DNSAction.Nxdomain()
+end
+function exampleSpoof(remote, qname, qtype, dh, len)
+        return DNSAction.Spoof()
+end
+function exampleAllow(remote, qname, qtype, dh, len)
+        return DNSAction.Allow()
+end
+
+function examplePool(remote, qname, qtype, dh, len)
+        return DNSAction.Pool, "dnspool1"
+end
+
 <br>
 #DNSHeader<br>
 void dnsheader:setRD(bool)<br>
