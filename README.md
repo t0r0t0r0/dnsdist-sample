@@ -18,33 +18,33 @@ DNSAction.HeaderModify()<br>
 DNSAction.None<br>
 -- 記述例 --<br>
 ```
-    function exampleAllow(remote, qname, qtype, dh, len)
-        return DNSAction.Allow()
-    end
-<br>
-function exampleDelay(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Delay()<br>
-end<br>
-<br>
-function exampleDrop(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Drop()<br>
-end<br>
-<br>
-function exampleNxDomain(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Nxdomain()<br>
-end<br>
-<br>
-function examplePool(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Pool, "dnspool1"<br>
-end<br>
-<br>
-function exampleSpoof(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Spoof()<br>
-end<br>
-<br>
-function exampleNone(remote, qname, qtype, dh, len)<br>
-        return DNSAction.None()<br>
-end<br>
+function exampleAllow(remote, qname, qtype, dh, len)
+    return DNSAction.Allow()
+end
+
+function exampleDelay(remote, qname, qtype, dh, len)
+        return DNSAction.Delay()
+end
+
+function exampleDrop(remote, qname, qtype, dh, len)
+        return DNSAction.Drop()
+end
+
+function exampleNxDomain(remote, qname, qtype, dh, len)
+        return DNSAction.Nxdomain()
+end
+
+function examplePool(remote, qname, qtype, dh, len)
+        return DNSAction.Pool, "dnspool1"
+end
+
+function exampleSpoof(remote, qname, qtype, dh, len)
+        return DNSAction.Spoof()
+end
+
+function exampleNone(remote, qname, qtype, dh, len)
+        return DNSAction.None()
+end
 ```
 <br>
 <br>
