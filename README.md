@@ -17,10 +17,10 @@ DNSAction.Spoof()<br>
 DNSAction.HeaderModify()<br>
 DNSAction.None<br>
 -- 記述例 --<br>
-`
-    function exampleAllow(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Allow()<br>
-    end<br>
+
+`    function exampleAllow(remote, qname, qtype, dh, len)
+        return DNSAction.Allow()
+    end
 `
 `
 <br>
