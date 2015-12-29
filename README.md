@@ -21,6 +21,8 @@ DNSAction.None<br>
     function exampleAllow(remote, qname, qtype, dh, len)<br>
         return DNSAction.Allow()<br>
     end<br>
+`
+`
 <br>
 function exampleDelay(remote, qname, qtype, dh, len)<br>
         return DNSAction.Delay()<br>
