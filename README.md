@@ -10,17 +10,10 @@ webserver("192.168.0.1:8083","dnsdist")<br>
 #DNSAction<br>
 DNSAction.Allow()<br>
 DNSAction.Delay()<br>
-DNSAction.DisableValidation()<br>
 DNSAction.Drop()<br>
-DNSAction.Log()<br>
-DNSAction.NoRecurse()<br>
 DNSAction.Nxdomain()<br>
 DNSAction.Pool , string poolname<br>
-DNSAction.QPSPool , string poolname<br>
-DNSAction.QPS()<br>
-DNSAction.RCode()<br>
 DNSAction.Spoof()<br>
-DNSAction.TC()<br>
 DNSAction.HeaderModify()<br>
 DNSAction.None<br>
 -- 記述例 --<br>
