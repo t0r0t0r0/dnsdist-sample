@@ -17,6 +17,14 @@ DNSAction.Spoof()<br>
 DNSAction.HeaderModify()<br>
 DNSAction.None<br>
 -- 記述例 --<br>
+function exampleAllow(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Allow()<br>
+end<br>
+<br>
+function exampleDelay(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Delay()<br>
+end<br>
+<br>
 function exampleDrop(remote, qname, qtype, dh, len)<br>
         return DNSAction.Drop()<br>
 end<br>
@@ -25,16 +33,16 @@ function exampleNxDomain(remote, qname, qtype, dh, len)<br>
         return DNSAction.Nxdomain()<br>
 end<br>
 <br>
+function examplePool(remote, qname, qtype, dh, len)<br>
+        return DNSAction.Pool, "dnspool1"<br>
+end<br>
+<br>
 function exampleSpoof(remote, qname, qtype, dh, len)<br>
         return DNSAction.Spoof()<br>
 end<br>
 <br>
-function exampleAllow(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Allow()<br>
-end<br>
-<br>
-function examplePool(remote, qname, qtype, dh, len)<br>
-        return DNSAction.Pool, "dnspool1"<br>
+function exampleNone(remote, qname, qtype, dh, len)<br>
+        return DNSAction.None()<br>
 end<br>
 <br>
 <br>
