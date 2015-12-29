@@ -17,7 +17,7 @@ DNSAction.Spoof()<br>
 DNSAction.HeaderModify()<br>
 DNSAction.None<br>
 -- 記述例 --<br>
-'
+`
     function exampleAllow(remote, qname, qtype, dh, len)<br>
         return DNSAction.Allow()<br>
     end<br>
@@ -45,7 +45,7 @@ end<br>
 function exampleNone(remote, qname, qtype, dh, len)<br>
         return DNSAction.None()<br>
 end<br>
-'<br>
+`<br>
 <br>
 #DNSHeader<br>
 void dnsheader:setRD(bool)<br>
